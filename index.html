@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="dv"></div>
+
+  <!--引入全局对象  -->
+  <script src="./js/fly.js"></script>
+  <!--引入小鸟对象  -->
+  <script src="./js/bird.js"></script>
+  <!--引入天空对象  -->
+  <script src="./js/sky.js"></script>
+  <!--引入陆地对象  -->
+  <script src="./js/land.js"></script>
+  <!--引入管道对象  -->
+  <script src="./js/pipe.js"></script>
+  <!--引入Game对象  -->
+  <script src="./js/game.js"></script>
+  <script>
+    Fly.Game({ id: 'dv' }).start();
+
+    // 1 调用 Game 的start() 方法
+    // 2 调用 createRoles() 创建游戏角色
+    // 3 调用 hero.addListener() 添加小鸟碰撞的订阅
+    //        订阅中实现：结束游戏
+    // 4 游戏运行。。。。
+    // 5 小鸟发生碰撞
+    // 6 调用 trigger() 发布小鸟碰撞的消息
+    // 7 遍历 listeners 订阅者列表，分别调用每一个订阅者的函数
+    //        对于 Game 对象来说，就是结束游戏！
+    
+  </script>
+</body>
+
+</html>
